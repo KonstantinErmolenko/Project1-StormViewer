@@ -14,13 +14,14 @@ class DetailViewController: UIViewController {
     
     // MARK: - Public Properties
     var selectedImage: String?
-    var selectedImageTitle: String?
+    var selectedImageNumber = 0
+    var totalImages = 0
     
     // MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = selectedImageTitle
+        title = "Picture \(selectedImageNumber) of \(totalImages)"
         navigationItem.largeTitleDisplayMode = .never
         
         if let imageToLoad = selectedImage {
