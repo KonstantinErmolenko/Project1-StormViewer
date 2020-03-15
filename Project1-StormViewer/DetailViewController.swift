@@ -9,10 +9,14 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    // MARK: - IB Outlets
     @IBOutlet var imageView: UIImageView!
+    
+    // MARK: - Public Properties
     var selectedImage: String?
     var selectedImageTitle: String?
     
+    // MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
